@@ -61,8 +61,8 @@
 
 - (void)updateProgressWithBytesSent:(int64_t)sentBytes expectedBytes:(int64_t)expectedByes
 {
-    NSParameterAssert(sentBytes);
-    NSParameterAssert(expectedByes);
+    //NSParameterAssert(sentBytes);
+    //NSParameterAssert(expectedByes);
     
     if (self.progress){
         if (expectedByes != NSURLSessionTransferSizeUnknown) {
