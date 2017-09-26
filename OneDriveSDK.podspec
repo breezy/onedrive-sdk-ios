@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OneDriveSDK"
-  s.version      = "1.2.2"
+  s.version      = "1.2.3"
   s.summary      = "OneDrive iOS SDK"
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author        = { "onedriveapi " => "onedrivesdkowners@microsoft.com" }
   s.social_media_url = "http://twitter.com/onedrivedev"
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.3"
 
   s.source       = { :git => "https://github.com/OneDrive/onedrive-sdk-ios.git",
                      :tag => "#{s.version}"}
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 
 
   s.subspec "Auth" do |oda|
-    oda.dependency 'ADALiOS', '~> 1.2'
+    oda.dependency 'ADAL', '~> 1.2'
     oda.dependency 'Base32', '~> 1.1'
     oda.dependency 'OneDriveSDK/Common'
 
